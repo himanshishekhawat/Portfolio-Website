@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Poppins:wght@200;400;600&family=Source+Sans+Pro:wght@600&family=Ubuntu:ital,wght@0,300;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title>Himanshi Development Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(2, 2, 54);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      nav{
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 65px;
+        background-color: rgb(20, 20, 70);
+        padding: 0 20px;
+      }
+      nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      nav ul li{
+        list-style: none;
+        margin: 0 20px;
+      }
+      nav ul li a{
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+      }
+      nav ul li a:hover{
+        color: rgb(209, 174, 241);
+        font-size: 1.02rem;
+      }
+      .left {
+        font-size: 1.5rem;
+        padding-left: 20px;
+      }
+      .first{
+        display: flex;
+        justify-content: space-around;
+        height: 665px;
+        align-items: center;
+      }
+      .left-first-section{
+        width: 50%;
+        font-size: 2.5rem;
+        margin-left: 100px;
+      }
+      .purple {
+        color: rgb(147, 91, 221);
+      }
+      .dark-purple{
+        color: rgb(34, 0, 67);
+      }
+      .right-first-section{
+        margin-top: -90px;
+        margin-right: 200px;
+        position: relative;
+        animation-name: moveUp;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes moveUp {
+        0%   {  top:0px;}
+        50%  {  top:30px;}
+        100%  {  top:0px;}
+      }
+     #element{
+      color: rgb(147, 91, 221);
+     }
+     .resume{
+      background-color:rgb(147, 91, 221);
+      color: white;
+      padding: 8px 20px;
+      border-radius: 25px;
+     }
+     .About-Section{
+      height: 575px;
+      display: block;
+      align-items: center;
+      background-color:rgb(147, 91, 221);
+     }
+     ::-webkit-scrollbar{
+      width:10px;
+      color: white;
+     }
+     ::-webkit-scrollbar-thumb{
+      background: rgb(147, 91, 221);
+      border-radius: 5px;
+      height: 100px;
+     }
+     .About-Content-Section{
+      height: 72%;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      margin: 0 100px;
+     }
+     #A-C-Head{
+      font-size: 40px;
+      padding: 50px 0;
+      padding-bottom: 0;
+      text-align: center;
+     }
+     .Content-Left{
+      align-items: center;
+     }
+     #my-image{
+      filter: drop-shadow(10px 10px 8px rgb(69, 30, 86));
+      align-self: center;
+      border-radius: 10px;
+     }
+     .Content-Right{
+      font-size: 18px;
+      margin:0 20px;
+     }
+    
+    .Projects{
+      margin-top: 180px;
+      height: 700px;
+    }
+
+    .P-Heading{
+      letter-spacing: 5.9px;
+      margin: 40px 0;
+      font-size: 24px;
+      text-align: center;
+    }
+    u{
+      border-bottom:2px solid rgb(147, 91, 221);
+      text-decoration: none;
+    }
+    .Project-1{
+      display: flex;
+      height: 630px;
+    }
+    .P1-img{
+      width: 50%;
+    }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Himanshi Shekhawat</div>
+        <div class="right">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About" id="About-Link">About</a></li>
+                <li><a href="http://">Projects</a></li>
+                <li><a href="http://">Contact Me</a></li>
+                <li><a class="resume" href="/Himanshi_Shekhawat_Resume (2) (1).pdf" download>Resume</a></li>
+
+            </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <section class="first" id="Home">
+            <div class="left-first-section">
+                <div class="lfs-1">Hi there! I'm <span class="purple">Himanshi</span></div>
+                <div class="lfs-2">and I'm a <br>
+                  <span id="element"></span>
+                  </div>
+                  
+            </div>
+            <div class="right-first-section">
+              <img src="/female-developer-5359992-4492091.webp" alt="Just a 3D image of a female Developer"/>
+            </div>
+        </section>
+        <section class="About-Section" id="About">
+          <h1 id="A-C-Head">ABOUT ME</h1>
+          <div class="About-Content-Section">
+            <div class="Content-Left">
+              <img id="my-image" src="/my-image.jpeg" alt="My Picture" width="85%" height="85%"/>
+            </div>
+            <div class="Content-Right">
+              <p>
+                Hello everyone, I'm Himanshi Shekhawat an aspiring Software Developer. While I'm at the beginning of my journey I want to showcase my skills and determination to make a meningful impact using power of Technology. I strongly believe that I'm a self-driven and hard working individual, Someone who's flexible enough to fit in any environment.
+              </p><br>
+              <p>
+                Through this portfolio I want to showcase my learning in <span class="dark-purple">HTML, CSS and JavaScript</span>  so far, and I believe this portfolio will allow me to connect with some like-minded people with whom I can collaborate with and contribute to some great projects with positive impact!
+              </p><br><br>
+              <p><span class="dark-purple">Technolgies:</span> HTML, CSS, JavaScript</p>
+              <p><span class="dark-purple">Languages:</span> C/C++, Python </p>
+            </div>
+          </div>
+        </section>
+        <section class="projects">
+          <div class="Project-Head">
+            <h1>Projects</h1>
+          </div>
+        </section>
+    </main>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Web Developer.'],
+        typeSpeed: 70,
+      });
+    </script>
+  
+  </body>
+</html>

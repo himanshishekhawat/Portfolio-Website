@@ -38,13 +38,14 @@
         margin: 0 20px;
       }
       nav ul li a{
+        transition: 0.2s color ease-out;
         color: white;
         font-family: 'Poppins', sans-serif;
         text-decoration: none;
       }
       nav ul li a:hover{
         color: rgb(209, 174, 241);
-        font-size: 1.02rem;
+        
       }
       .left {
         font-size: 1.5rem;
@@ -145,14 +146,67 @@
       border-bottom:2px solid rgb(147, 91, 221);
       text-decoration: none;
     }
-    .Project-1{
-      display: flex;
-      height: 630px;
+    .Project-Head{
+      margin: 60px 0;
+      margin-top: 100px;
+      text-align: center;
+      font-size: 24px;
     }
-    .P1-img{
-      width: 50%;
+    .Project1-Content img{
+      width: 80%;
+      height: 100%;
+      border-radius: 5px;
+      filter: drop-shadow(5px 5px 8px rgb(32, 13, 77));
+    }
+    
+    .Project-Headline{
+      margin: 20px 0;
+      margin-bottom: 150px;
+    }
+    .Project1-Content{
+      display: flex;
+      justify-content: space-between;
+      margin-left:95px;
+      margin-right: 95px;
+    }
+    .Project1-description{
+      width:60%;
+    }
+    .P1-Heading{
+      margin-top: 20px;
+      font-size:28px;
+      font-weight: 600;
+      color: rgb(147, 91, 221);
+    }
+    a.P1-Link:hover{
+      background-color: rgb(2, 2, 54);
+      color:white;
+      border: 2px solid rgb(147, 91, 221);
     }
 
+    .P1-Description{
+      margin: 20px 0;
+      font-size:20px;
+      margin-bottom: 40px;
+    }
+    .P1-Link{
+      border: 2px solid rgb(147, 91, 221);
+      margin-right: 20px;
+      transition: 0.3s background-color ease-out;
+      background-color: rgb(147, 91, 221);
+      color: white;
+      border-radius: 25px;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+
+    .Project-Section-End{
+      color: rgb(203, 168, 249);
+      margin: 60px 0;
+      margin-top: 150px;
+      text-align: center;
+      font-size: 24px;
+    }
     </style>
   </head>
   <body>
@@ -163,7 +217,7 @@
             <ul>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About" id="About-Link">About</a></li>
-                <li><a href="http://">Projects</a></li>
+                <li><a href="#Pro-Section">Projects</a></li>
                 <li><a href="http://">Contact Me</a></li>
                 <li><a class="resume" href="/Himanshi_Shekhawat_Resume (2) (1).pdf" download>Resume</a></li>
 
@@ -202,9 +256,31 @@
             </div>
           </div>
         </section>
+        <p id="Pro-Section"></p>
         <section class="projects">
           <div class="Project-Head">
-            <h1>Projects</h1>
+            <h1><u>PROJECTS</u></h1>
+            <p class="Project-Headline">Here you can find my personal project work!</p>
+          </div>
+          <div class="Project1-Content">
+            <div class="Project-img"><img src="/Screenshot (461).jpg"  alt="Project Screenshot"/></div> 
+            <div class="Project1-description">
+              <h3 class="P1-Heading">Nuveen Clone</h3>
+              <p class="P1-Description">Nuveen Clone is a Front-end project, purely based on HTML and CSS. "Nuveen en-us" is the orignal website from where the project was created.</p>
+              <a href="https://www.nuveen.com/en-us" class="P1-Link">Orignal Website</a>
+              <a href="https://github.com/himanshishekhawat/Nuveen-Clone" class="P1-Link">Github Link</a>
+            </div>
+          </div>
+          <div class="Project-Section-End">
+            <p>Stay connected to watch out some more exciting new projects coming soon!</p>
+          </div>
+        </section>
+        <section class="Footer">
+          <div class="contact">
+
+          </div>
+          <div class="socials">
+
           </div>
         </section>
     </main>

@@ -14,7 +14,7 @@
         padding: 0;
       }
       body {
-        background-color: rgb(2, 2, 54);
+        background-color: rgb(1, 1, 39);
         color: white;
         font-family: 'Poppins', sans-serif;
       }
@@ -207,6 +207,72 @@
       text-align: center;
       font-size: 24px;
     }
+    .contact{
+      margin-bottom: 200px;
+    }
+    #Contact-Heading{
+      margin: 60px 0;
+      margin-top: 200px;
+      text-align: center;
+      font-size: 36px;
+    }
+    #Contact-Sub-Heading{
+      margin: 20px 0;
+      margin-bottom: 150px;
+      text-align: center;
+      font-size: 24px;
+    }
+    .Form-Table{
+      margin-left: 260px;
+    }
+    .Form-Table input{
+      font-size: 18px;
+      padding: 20px;
+      color: white;
+      width: 200%;
+      margin-bottom: 40px;
+      border: none;
+      border-bottom: 2px solid rgb(147, 91, 221);
+      background-color: rgb(1, 1, 39);
+    }
+    .Form-Table tr{
+      padding-bottom: 10px;
+    }
+    .Form-Table ::placeholder{
+      color: white;
+    }
+    #Submit-Button{
+      font-family: 'poppins', sans-serif;
+      font-weight: 500;
+      letter-spacing: 1.9px;
+      border: none;
+      margin-top:30px;
+      margin-left: 260px;
+      width: 10%;
+      background-color:rgb(147, 91, 221);
+      color: white;
+      padding: 10px 25px;
+      border-radius: 25px;
+      font-size: 18px;
+    }
+    .socials{
+      height: 350px;
+      background-color:rgb(147, 91, 221);
+      color: white;
+    }
+
+    .social-left{
+      align-items: center;
+      margin: 40px 70px;
+      width: 50%;
+    }
+
+    .social-container{
+      justify-content: space-between;
+      display: flex;
+      height: 70%;
+    }
+    
     </style>
   </head>
   <body>
@@ -277,14 +343,48 @@
         </section>
         <section class="Footer">
           <div class="contact">
-
+            <h1 id="Contact-Heading"><u>CONTACT</u></h1>
+            <p id="Contact-Sub-Heading">If you have any questions or suggestions, Feel free to contact by filling out the form!</p>
+            <form class="Contact-Form" method="post" action="https://formsubmit.co/shekhawat.h2004
+            @gmail.com" name="myForm">
+              <table class="Form-Table">
+                <tr>
+                  <td><h2>Name</h2></td>
+                </tr>
+                <tr>
+                  <td><input type="text" name="UserName" placeholder="Enter Your Name" required></td>
+                </tr>
+                <tr>
+                  <td><h2>Email</h2></td>
+                </tr>
+                <tr>
+                  <td><input type="email" name="UserEmail" placeholder="Enter Your Email" required></td>
+                </tr>
+                <tr>
+                  <td><h2>Message</h2></td>
+                </tr>
+                <tr>
+                  <td><input type="textarea" name="Message" placeholder="Add Message" required></td>
+                </tr>
+              </table>
+              <button id="Submit-Button" type="submit">SUBMIT
+            </form>
           </div>
           <div class="socials">
-
+            <div class="social-container">
+              <div class="social-left">
+                <h2>Himanshi Shekhawat</h2>
+                <p>A Frontend based Web Developer, majorly focusing on building successful frontend of projects.</p>
+              </div>
+              <div class="social-right">
+                <h2>SOCIAL</h2>
+              </div>
+            </div>
+            <hr>
+              <p> compyright 2023 made by</p> <a href="#Home"> <b>Himanshi Shekhawat</b></a>
           </div>
         </section>
     </main>
-    
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed('#element', {
@@ -292,6 +392,5 @@
         typeSpeed: 70,
       });
     </script>
-  
   </body>
 </html>

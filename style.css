@@ -1,0 +1,369 @@
+      html{
+        scroll-behavior: smooth;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(1, 1, 39);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      nav{
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 65px;
+        background-color: rgb(20, 20, 70);
+        padding: 0 20px;
+      }
+      nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      nav ul li{
+        
+        list-style: none;
+        margin: 0 20px;
+      }
+      nav ul li a{
+        padding: 20px 0;
+        transition: 0.2s color ease-out;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+      }
+      nav ul li a:hover{
+        color: rgb(176, 121, 228);
+        
+      }
+      .left {
+        font-size: 1.5rem;
+        padding-left: 20px;
+      }
+      .first{
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        height: 680px;
+        align-items: center;
+      }
+      .left-first-section{
+        width: 50%;
+        font-size: 2.5rem;
+        margin-left: 120px;
+      }
+      .purple {
+        color: rgb(147, 91, 221);
+      }
+      .dark-purple{
+        color: rgb(34, 0, 67);
+      }
+      .right-first-section{
+        margin-top: -90px;
+        margin-right: 200px;
+        position: relative;
+        animation-name: moveUp;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+      @keyframes moveUp {
+        0%   {  top:0px;}
+        50%  {  top:30px;}
+        100%  {  top:0px;}
+      }
+     #element{
+      color: rgb(147, 91, 221);
+     }
+     .resume{
+      border: 2px solid rgb(147, 91, 221);
+      transition: 0.3s background-color ease-out;
+      background-color:rgb(147, 91, 221);
+      color: white;
+      padding: 8px 20px;
+      margin-right: 20px;
+      border-radius: 25px;
+     }
+     a.resume:hover{
+      background-color: rgb(20, 20, 70);
+      color:white;
+      border: 2px solid rgb(147, 91, 221);
+     }
+     .About-Section{
+      height: 575px;
+      display: block;
+      align-items: center;
+      background-color:rgb(147, 91, 221);
+     }
+     ::-webkit-scrollbar{
+      width:10px;
+      color: white;
+     }
+     ::-webkit-scrollbar-thumb{
+      background: rgb(147, 91, 221);
+      border-radius: 5px;
+      height: 200px;
+     }
+     .About-Content-Section{
+      height: 70%;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      margin: 0 100px;
+     }
+     #A-C-Head{
+      padding-top: 50px;
+      font-size: 40px;
+      text-align: center;
+     }
+     .Content-Left{
+      align-items: center;
+     }
+     #my-image{
+      filter: drop-shadow(10px 10px 8px rgb(69, 30, 86));
+      align-self: center;
+      border-radius: 10px;
+     }
+     .Content-Right{
+      font-size: 18px;
+      margin:0 20px;
+     }
+    
+    .Projects{
+      margin-top: 180px;
+      height: 700px;
+    }
+
+    .P-Heading{
+      letter-spacing: 5.9px;
+      margin: 40px 0;
+      font-size: 24px;
+      text-align: center;
+    }
+    u{
+      border-bottom:2px solid rgb(147, 91, 221);
+      text-decoration: none;
+    }
+    .Project-Head{
+      margin: 60px 0;
+      margin-top: 100px;
+      text-align: center;
+      font-size: 24px;
+    }
+    .Project1-Content img{
+      width: 80%;
+      height: 100%;
+      border-radius: 5px;
+      filter: drop-shadow(5px 5px 8px rgb(32, 13, 77));
+    }
+    
+    .Project-Headline{
+      margin: 20px 0;
+      margin-bottom: 150px;
+    }
+    .Project1-Content{
+      display: flex;
+      justify-content: space-between;
+      margin-left:95px;
+      margin-right: 95px;
+    }
+    .Project1-description{
+      width:60%;
+    }
+    .P1-Heading{
+      margin-top: 20px;
+      font-size:28px;
+      font-weight: 600;
+      color: rgb(147, 91, 221);
+    }
+    a.P1-Link:hover{
+      background-color: rgb(2, 2, 54);
+      color:white;
+      border: 2px solid rgb(147, 91, 221);
+    }
+
+    .P1-Description{
+      margin: 20px 0;
+      font-size:20px;
+      margin-bottom: 40px;
+    }
+    #About{
+      padding-bottom: 50px;
+    }
+    .P1-Link{
+      border: 2px solid rgb(147, 91, 221);
+      margin-right: 20px;
+      transition: 0.3s background-color ease-out;
+      background-color: rgb(147, 91, 221);
+      color: white;
+      border-radius: 25px;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+
+    .Project-Section-End{
+      color: rgb(203, 168, 249);
+      margin: 60px 0;
+      margin-top: 150px;
+      text-align: center;
+      font-size: 24px;
+    }
+    .contact{
+      margin-bottom: 200px;
+    }
+    #Contact-Heading{
+      margin: 60px 0;
+      margin-top: 200px;
+      text-align: center;
+      font-size: 36px;
+    }
+    #Contact-Sub-Heading{
+      margin: 20px 0;
+      margin-bottom: 150px;
+      text-align: center;
+      font-size: 24px;
+    }
+    .Form-Table{
+      margin-left: 260px;
+    }
+    .Form-Table input{
+      font-weight: 400;
+      font-size: 18px;
+      padding: 20px;
+      color: white;
+      width: 200%;
+      margin-bottom: 40px;
+      border: none;
+      border-bottom: 2px solid rgb(147, 91, 221);
+      background-color: rgb(1, 1, 39);
+    }
+    .Form-Table tr{
+      padding-bottom: 10px;
+    }
+    .Form-Table ::placeholder{
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+    }
+
+    #Submit-Button{
+      font-family: 'poppins', sans-serif;
+      font-weight: 500;
+      letter-spacing: 1.9px;
+      border: none;
+      margin-top:30px;
+      margin-left: 260px;
+      width: 10%;
+      background-color:rgb(147, 91, 221);
+      color: white;
+      padding: 10px 25px;
+      border-radius: 25px;
+      font-size: 18px;
+    }
+    .socials{
+      height: 350px;
+      background-color:rgb(147, 91, 221);
+      color: white;
+    }
+
+    .social-left{
+      align-items: center;
+      margin: 90px 80px;
+      width: 50%;
+    }
+
+    .social-container{
+      justify-content: space-between;
+      display: flex;
+      height: 70%;
+    }
+    .social-title {
+      font-weight: 900;
+      letter-spacing: 0.9px;
+      color: rgb(2, 2, 54);
+    }
+    .social-description{
+      width: 70%;
+      margin-top: 10px;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+    }
+    .social-links ul{
+      display: flex;
+      justify-content: space-around;
+    }
+    .social-links li{
+      margin-top: 10px;
+      margin-left: -15px;
+      font-size: 24px;
+      list-style: none;
+    }
+    .social-right{
+      margin-top: 90px;
+      margin-right: 80px;
+    }
+    .socials hr{
+      width: 90%;
+      margin: auto;
+    }
+    .social-footer{
+      margin-top: 40px;
+      text-align: center;
+    }
+    .social-footer a{
+      text-decoration: none;
+      color: rgb(2, 2, 54);
+    }
+    .my-Form{
+      margin: 0 180px;
+    }
+    .my-Form label{
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+    }
+    .my-Form input{
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      background-color:rgb(1, 1, 39);
+      border: none;
+      border-bottom: 2px solid rgb(147, 91, 221);
+      width: 30%;
+      padding-bottom: 15px;
+      color: rgb(255, 255, 255);
+    }
+    .my-Form textarea{
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      background-color:rgb(1, 1, 39);
+      border: none;
+      border-bottom: 2px solid rgb(147, 91, 221);
+      width: 30%;
+      padding-bottom: 15px;
+      color: rgb(255, 255, 255);
+    }
+    .my-Form button{
+      background-color:rgb(147, 91, 221);
+      border: none;
+      margin-left: -12px;
+      margin-top: 10px;
+      color: white;
+      border-radius: 25px;
+      padding: 10px 30px;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+    }
+  
+    #no-border{
+        border: none;
+    }

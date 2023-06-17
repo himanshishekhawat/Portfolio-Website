@@ -10,6 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Poppins:wght@200;400;600&family=Source+Sans+Pro:wght@600&family=Ubuntu:ital,wght@0,300;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <title>Himanshi Development Portfolio</title>
     <style>
+      html{
+        scroll-behavior: smooth;
+      }
       * {
         margin: 0;
         padding: 0;
@@ -57,15 +60,16 @@
         padding-left: 20px;
       }
       .first{
+        padding-top: 40px;
         display: flex;
         justify-content: space-around;
-        height: 665px;
+        height: 680px;
         align-items: center;
       }
       .left-first-section{
         width: 50%;
         font-size: 2.5rem;
-        margin-left: 100px;
+        margin-left: 120px;
       }
       .purple {
         color: rgb(147, 91, 221);
@@ -116,18 +120,18 @@
      ::-webkit-scrollbar-thumb{
       background: rgb(147, 91, 221);
       border-radius: 5px;
-      height: 100px;
+      height: 200px;
      }
      .About-Content-Section{
-      height: 72%;
+      height: 70%;
       justify-content: space-between;
       align-items: center;
       display: flex;
       margin: 0 100px;
      }
      #A-C-Head{
+      padding-top: 50px;
       font-size: 40px;
-      padding-top:50px;
       text-align: center;
      }
      .Content-Left{
@@ -201,6 +205,9 @@
       font-size:20px;
       margin-bottom: 40px;
     }
+    #About{
+      padding-bottom: 50px;
+    }
     .P1-Link{
       border: 2px solid rgb(147, 91, 221);
       margin-right: 20px;
@@ -253,7 +260,7 @@
     }
     .Form-Table ::placeholder{
       color: white;
-      font-family: 'Poppins', sans-seri;
+      font-family: 'Poppins', sans-serif;
       font-size: 18px;
     }
 
@@ -325,23 +332,50 @@
       text-decoration: none;
       color: rgb(2, 2, 54);
     }
-    .Form-Table textarea{
+    .my-Form{
+      margin: 0 180px;
+    }
+    .my-Form label{
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+    }
+    .my-Form input{
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      margin-bottom: 10px;
+      margin-top: 10px;
       background-color:rgb(1, 1, 39);
       border: none;
-      color: white;
-      font-family: 'Poppins', sans-serif;
       border-bottom: 2px solid rgb(147, 91, 221);
-      font-size: 18px;
-      resize: none;
-      width: 215%;
-    }
-    .Form-Table textarea::placeholder{
+      width: 30%;
+      padding-bottom: 15px;
       color: rgb(255, 255, 255);
-      font-family: 'Poppins', sans-seri;
-      padding: 20px;
-      font-weight: 400;
     }
-    
+    .my-Form textarea{
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      background-color:rgb(1, 1, 39);
+      border: none;
+      border-bottom: 2px solid rgb(147, 91, 221);
+      width: 30%;
+      padding-bottom: 15px;
+      color: rgb(255, 255, 255);
+    }
+    .my-Form button{
+      background-color:rgb(147, 91, 221);
+      border: none;
+      margin-left: -12px;
+      margin-top: 10px;
+      color: white;
+      border-radius: 25px;
+      padding: 10px 30px;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+    }
+  
     
     </style>
   </head>
@@ -373,8 +407,8 @@
             <div class="right-first-section">
               <img src="/female-developer-5359992-4492091.webp" alt="Just a 3D image of a female Developer"/>
             </div>
+            
         </section>
-        
         <p id="About"></p>
         <section class="About-Section">
           <h1 id="A-C-Head">ABOUT ME</h1>
@@ -418,28 +452,22 @@
           <div class="contact" >
             <h1 id="Contact-Heading"><u>CONTACT</u></h1>
             <p id="Contact-Sub-Heading">If you have any questions or suggestions, Feel free to contact by filling out the form!</p>
-            <form onsubmit="sendEmail(); reset(); return false;" name="myForm" class="Contact-Form" method="POST">
-              <table class="Form-Table">
-                <tr>
-                  <td><h2>Name</h2></td>
-                </tr>
-                <tr>
-                  <td><input type="text" name="UserName" placeholder="Enter Your Name" required></td>
-                </tr>
-                <tr>
-                  <td><h2>Email</h2></td>
-                </tr>
-                <tr>
-                  <td><input type="email" name="UserEmail" placeholder="Enter Your Email" required></td>
-                </tr>
-                <tr>
-                  <td><h2>Message</h2></td>
-                </tr>
-                <tr>
-                  <td><textarea name="message" placeholder="Enter your message" cols="30" rows="10"></textarea></td>
-                </tr>
-              </table>
-              <button id="Submit-Button" type="submit">SUBMIT</button>
+            <form class="my-Form" action="https://formspree.io/f/xknadvyq" method="POST">
+              <pre>
+                <label>
+                  Name:
+                  <input id="no-border" type="text" name="Name" placeholder="Enter Name" required>
+                </label>
+                <label>
+                  Email:
+                  <input id="no-border" type="email" name="email" placeholder="Enter Email" required>
+                </label>
+              <label>
+                  Message:
+                  <textarea id="no-border" name="message" placeholder="Enter message" required></textarea>
+              </label>
+              <button type="submit">Send</button>
+              </pre>
             </form>
           </div>
           <div class="socials">
@@ -449,7 +477,7 @@
                 <p class="social-description">A Frontend based Web Developer, majorly focusing on building successful frontend of projects.</p>
               </div>
               <div class="social-right">
-                <h2 class="social-title">SOCIAL</h2>
+                <h2 class="social-title">SOCIALS</h2>
                 <div class="social-links">
                   <ul>
                     <li><a href="https://www.linkedin.com/in/hsshekhawat/"><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></a></li>
@@ -463,22 +491,6 @@
           </div>
         </section>
     </main>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      function sendEmail(){
-        Email.send({
-          Host : "smtp.elasticemail.com",
-          Username : "username",
-          Password : "password",
-          To : 'them@website.com',
-          From : "you@isp.com",
-          Subject : "This is the subject",
-          Body : "And this is the body"
-      }).then(
-        message => alert(message)
-      );
-      }
-    </script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed('#element', {
@@ -486,5 +498,6 @@
         typeSpeed: 90,
       });
     </script>
+    
   </body>
 </html>

@@ -399,5 +399,9 @@
     padding-top: 50px;
     padding-bottom: 50px;
    }
+   #my-image{
+    width: 100%;
+    height: auto;
+   }
   
  }

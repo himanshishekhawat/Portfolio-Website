@@ -369,36 +369,3 @@
         border: none;
     }
 
- @media  only screen and (max-width:600px){
-
-  .left {
-    width: 100%;
-    text-align: center;
-  }
-  .right{
-    display: none;
-  }
-  .first{
-    margin: 80px 0;
-    height: auto;
-    display: inline-block;
-    width: 100%;
-  }
-  .right-first-section{
-    display: none;
-  }
-  .About-Section{
-    height: auto;
-    width: 100%;
-    display: inline-block;
-   }
-   .About-Content-Section{
-    height: auto;
-    display: inline-block;
-   }
-   #A-C-Head{
-    padding-top: 50px;
-    padding-bottom: 50px;
-   }
-  
- }

@@ -400,5 +400,48 @@
     padding-top: 50px;
     padding-bottom: 50px;
    }
+   .Content-Right{
+    font-size: 14px;
+    margin:50px 0;
+    padding: 0;
+   }
+   .Content-Left{
+    margin-left: 40px;
+   }
+   .Project1-Content{
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    margin: 0 40px;
+  }
+  .Project1-description{
+    width:100%;
+  }
+  .Project1-Content img{
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+    filter: drop-shadow(5px 5px 8px rgb(32, 13, 77));
+    margin-bottom: 20px;
+  }
+  .Project-Headline {
+    margin: 20px;
+    margin-bottom: 58px;
+  }
+  #Contact-Heading{
+    margin-top: 60px;
+  }
+  .contact{
+    margin-bottom: 90px;
+  }
+  .my-Form{
+    margin: 0px;
+  }
+  .social-container{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+  }
+  
   
  }

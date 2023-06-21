@@ -379,6 +379,7 @@
     display: none;
   }
   .first{
+    margin: 80px 0;
     height: auto;
     display: inline-block;
     width: 100%;
@@ -399,6 +400,5 @@
     padding-top: 50px;
     padding-bottom: 50px;
    }
-
   
  }

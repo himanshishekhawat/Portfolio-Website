@@ -441,6 +441,31 @@
     display: inline-block;
     width: 100%;
     height: auto;
+    background-color: rgb(147, 91, 221);
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .social-links li{
+    margin: 0;
+  }
+  .social-left{
+    padding-top: 40px;
+    margin: 0;
+    width: 100%;
+    text-align:center;
+  }
+  .social-description{
+    text-align: center;
+    width: 100%;
+    padding:5px 30px;
+  }
+  .social-right{
+    margin: 50px 0;
+  }
+  .social-links ul{
+    margin: 0 210px;
+    justify-content: space-between;
+    align-items: center;
   }
   
   

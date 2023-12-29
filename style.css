@@ -139,8 +139,6 @@
     .Projects{
       margin-top: 180px;
       height: 700px;
-      display: flex;
-      flex-direction: column;
     }
 
     .P-Heading{
@@ -418,7 +416,7 @@
     display: inline-block;
     height: auto;
     width: 100%;
-    margin: 0 40px;
+    margin: 10px 40px;
   }
   .Project1-description{
     width:80%;

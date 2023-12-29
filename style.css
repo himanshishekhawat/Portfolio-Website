@@ -139,6 +139,8 @@
     .Projects{
       margin-top: 180px;
       height: 700px;
+      display: flex;
+      flex-direction: column;
     }
 
     .P-Heading{
@@ -158,8 +160,8 @@
       font-size: 24px;
     }
     .Project1-Content img{
-      width: 80%;
-      height: auto;
+      width: 580px;
+      height: 280px;
       border-radius: 5px;
       filter: drop-shadow(5px 5px 8px rgb(32, 13, 77));
     }

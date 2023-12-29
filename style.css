@@ -411,7 +411,7 @@
     padding: 0;
    }
    .Content-Left{
-    margin-left: 40px;
+
    }
    .Project1-Content{
     display: inline-block;
@@ -420,7 +420,7 @@
     margin: 0 40px;
   }
   .Project1-description{
-    width:70%;
+    width:80%;
   }
   .Project1-Content img{
     width: 70%;

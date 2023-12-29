@@ -392,7 +392,8 @@
   .About-Section{
     height: auto;
     width: 100%;
-    display: inline-block;
+    display: flex;
+    flex-direction: column
    }
    .About-Content-Section{
     height: auto;

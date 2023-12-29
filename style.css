@@ -472,5 +472,9 @@
     justify-content: center;
     align-items: center;
   }
-  
+
+  #my-image{
+    margin: 0 10px;
+  }
+
  }

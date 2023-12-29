@@ -170,12 +170,13 @@
     }
     .Project1-Content{
       display: flex;
+      margin-top: 60px;
       justify-content: space-between;
       margin-left:95px;
       margin-right: 95px;
     }
     .Project1-description{
-      width:30%;
+      width:40%;
     }
     .P1-Heading{
       margin-top: 20px;
